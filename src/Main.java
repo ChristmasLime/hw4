@@ -11,7 +11,7 @@ public class Main {
 
     public static void task1() {
         System.out.println("Задача 1");
-        int age = 17;
+        int age = 12;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " ,то он совершеннолетний.");
         } else {
@@ -98,32 +98,19 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
-        int one = 1;
-        int two = 1;
-        int three = 100;
-        if (one > two) {
-            if (one >= three) {
-                System.out.println("Максимальное число : " + one);
-            } else {
-                System.out.println("Максимальное число : " + three);
-            }
-        } else if (two > one) {
-            if (two >= three) {
-                System.out.println("Максимальное число : " + two);
-            } else {
-                System.out.println("Максимальное число : " + three);
-            }
-        } else {
-            if (one > three) {
-                System.out.println("Максимальное число : " + one);
-            } else if (three > one) {
-                System.out.println("Максимальное число : " + three);
-            } else {
-                System.out.println("Три числа равны.");
-            }
+        int one = 122;
+        int two = 77;
+        int three = 222;
+        if (one > two && one>three) {
+            System.out.println("Максимальное число one: " + one);
         }
-
-
+        else if (two>one && two>three){
+            System.out.println("Максимальное число two: " + two);
+        }
+        else if (three> one && three>two) {
+            System.out.println("Максимальное число three: " + three);
+        }else {
+            System.out.println("Все числа равны");
+        }
     }
 }
-
